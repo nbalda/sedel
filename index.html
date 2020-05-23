@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <script>
+
+        function openTextFile() {
+
+            var aporizm = [
+                "Hey",
+                "hi",
+                "sdfs",
+                "23434234",
+                "erwtghj7777"
+            ];
+        
+            var randomAporizm = () => `${aporizm[Math.floor(Math.random() * aporizm.length)]}`
+            document.getElementById('output').innerText = randomAporizm()
+        }
+
+    </script>
+</head>
+<body>
+    <div class="content">
+        
+        <div id='output'>Таньд зохиулав</div>
+        <div class="randomBtn">
+            <button class="btn" onclick="openTextFile()">Энд дарна уу...</button>
+        </div>
+        
+    </div>
+    <div class="fb-share-button">
+        <img src="image/share.png" alt="">
+    </div>
+</body>
+</html>
