@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url"           content="https://sedel.ga/" />
-    <meta property="og:type"          content="article" />
+    <head prefix="my_namespace: https://sedel.ga/content">
+    <meta property="og:type" content="my_namespace:my_type" />
     <meta property="og:title"         content="Таньд зохиулав" />
     <meta property="og:description"   content="Хором бүрийг эрч хүчээр дүүргэх үгс..." />
     <meta property="og:image"         content="https://sedel.ga/index.html" />
@@ -30,20 +31,24 @@
     </script>
 </head>
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=2580527488873384&autoLogAppEvents=1"></script>    
     
-    <article class="content">
+    <div rel="namespace:content" class="content">
 
         <div id='output'>Таньд зохиулав</div>
         <div class="randomBtn">
             <button class="btn" onclick="openTextFile()">Энд дарна уу...</button>
         </div> 
 
-    </article>
+    </div>
 
+    
     <div class="fb-share-button" data-href="https://sedel.ga/" data-layout="button" data-size="small">
         <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsedel.ga%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
     </div>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=2580527488873384&autoLogAppEvents=1"></script>    
+    
+
 </body>
 </html>
